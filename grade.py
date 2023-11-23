@@ -24,7 +24,7 @@ def test():
                 if(req.status_code == 200 and ('login.html' in req.text)):
                     print('patched')
                     with open('/tmp/grade_result.txt', 'w') as f:
-                        f.write('{\'2\':\'True\'}')
+                        f.write('{2:\'True\'}')
                     return 0
                 else:
                     print('something wrong')
